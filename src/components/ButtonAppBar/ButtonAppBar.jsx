@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { makeStyles } from "@mui/styles";
 
 const pages = ["Home", "About", "Shop", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -36,10 +37,9 @@ const ButtonAppbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: "#6f42c1" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
