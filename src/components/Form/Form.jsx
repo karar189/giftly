@@ -12,7 +12,7 @@ export default function App() {
   // console.log(errors);
 
   return (
-    <Container>
+    <>
       <Box
         component="form"
         sx={{
@@ -29,7 +29,7 @@ export default function App() {
           variant="filled"
         />
       </Box>
-      <Box sx={{ m: 1, width: "50ch" }}>
+      <Box sx={{ m: 0, width: "50ch" }}>
         <TextField
           id="filled-multiline-static"
           label="Message"
@@ -42,6 +42,6 @@ export default function App() {
       <Box sx={{ m: 1, mt: 2 }}>
         <Button variant="outlined">Submit</Button>
       </Box>
-    </Container>
+    </>
   );
 }
